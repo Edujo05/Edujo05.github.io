@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada y Salida</title>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+
+    <script src="./FirebaseTest/Secuencias.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div><h1 class="text-center" style="color: aliceblue;"> Secuencias </h1></div>
+    </header>
+
+    <section>
+        <div class="card-body col-10">
+            <div class="row m-8">
+                <div class="col-7 text-end" style="color:  aliceblue;"><h4>Botones:</h4> </div>
+                <br>              
+                <div class="col-6 text-end" style="color:  aliceblue;">Boton_1</div>
+                <div class="col-2 text-end"><input type="number" id="Btn_1" name="Btn_1"></div>
+                <br>
+                <div class="col-6 text-end" style="color:  aliceblue;">Boton_2</div>
+                <div class="col-2 text-end"><input type="number" id="Btn_2" name="Btn_2"></div>
+                <br>
+            </div>
+        </div>
+        <br>
+
+        <div class="card-body col-10">
+            <div class="row m-8">
+                <div class="col-8 text-end" style="color:  aliceblue;"><h4>Boton_1 Firebase:</h4> </div>
+                <div class="col-9 text-end" style="color:  aliceblue;"><label id="lblBTN_ONE"></label></div>
+                <br>
+                <div class="col-8 text-end" style="color:  aliceblue;"><h4>Boton_2 Firebase:</h4> </div>
+                <div class="col-9 text-end" style="color:  aliceblue;"><label id="lblBTN_TWO"></label></div>
+                <br>
+            </div>
+        </div>
+        <br>
+
+        <div class="card-body col-12">
+            <div class="row m-1">
+               <div class="col-6 text-end"><button type="button" id="btnEnviar" class="btn btn-success" onclick="fnEnviar()">Enviar</button></div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row m-2">
+            <a href="Ejercicios.html">
+                <div class="col-6 text-end">
+                    <button type="button" class="btn btn-success">Regresar</button>
+                </div>
+            </a>
+        </div>
+        <br>
+    </section>
+    
+    <div>
+        <body background="https://wallpaperaccess.com/full/1989560.jpg"></body>
+    </div>
+</body>
+</html>

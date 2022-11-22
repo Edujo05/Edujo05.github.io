@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="card1" style="width: 18rem;">
+            <img src="https://www.eltiempo.com/files/image_640_428/uploads/2021/12/06/61ae7abe0ad7b.jpeg">
+            <div class="card-body">
+              <p class="card-text"><h1>Calculadora</h1></p>
+            </div>
+        </div>
+    </header>
+    
+    <section>
+        <div class="card row m-5 col-7">
+            <div class="row m-5 col-7">
+                <div class="card-header"><br>
+                    <h2>Calculadora</h2>
+                </div></br>
+            </div>
+            <div class="card-body col-6">
+                <div class="row m-2">
+                    <div class="col-6 text-end">Numero Uno:</div>
+                    <div class="col-6 text-end"><input type="number" id="Numuno" name="Numuno"></div>
+                </div>
+                <div class="row m-2">
+                    <div class="col-6 text-end">Numero Dos:</div>
+                    <div class="col-6 text-end"><input type="number" id="Numdos" name="Numdos"></div>
+                </div>
+                <br>
+                <div class="row m-2">
+                    <div class="col-6 text-end">Operar:</div>
+                    <div class="col-6 text-end"><button type="button" class="btn btn-outline-danger btn-sm" onclick="fnSumar()">Sumar</button></div>
+                </div>
+                <br>
+                <div class="row m-2">
+                    <div class="col-12 text-end"><button type="button" class="btn btn-primary btn-sm" onclick="fnRestar()">Restar</button></div>
+                </div>
+                <br>
+                <div class="row m-2">
+                    <div class="col-12 text-end"><button type="button" class="btn btn-outline-secondary btn-sm" onclick="fnMultiplicacion()">Multiplicacion</button></div>
+                </div>
+                <br>
+                <div class="row m-2">
+                    <div class="col-12 text-end"><button type="button" class="btn btn-success btn-sm" onclick="fnDivision()">Division</button></div>
+                </div>
+                <br>
+                <div class="row m-2">
+                    <div class="col-12 text-end"><button type="button" class="btn btn-danger btn-sm" onclick="fnRaizCuadrada()">Raiz Cuadrada</button></div>
+                </div>
+                <br>
+                <div class="row m-2">
+                    <div class="col-12 text-end"><button type="button" class="btn btn-info btn-sm" onclick="fnPotenciación()">Potenciación</button></div>
+                </div>
+                <br>
+                <div class="row m-40">
+                    <div class="col-50 text-end"><button type="button" class="btn btn-outline-info btn-sm" onclick="fnAreatriangulo()">Area del triangulo</button></div>
+                </div>
+                <br>
+                <div class="row m-40">
+                    <div class="col-50 text-end"><button type="button" class="btn btn-outline-success btn-sm" onclick="fnHipotenusa()">Hipotenusa</button></div>
+                </div>
+                <br>
+                <div class="row m-40">
+                    <div class="col-50 text-end"><button type="button" class="btn btn-outline-primary btn-sm" onclick="fnAreaRectangulo()">Area del Rectangulo</button></div>
+                </div>
+                <br>
+                <div class="row m-40">
+                    <div class="col-50 text-end"><button type="button" class="btn btn-outline-dark btn-sm" onclick="fnAreaCirculo()">Area del Circulo</button></div>
+                </div>
+                <br>
+                <div class="row m-2">
+                    <div class="col-6 text-end">Resultado:</div>
+                    <div class="col-6 text-end"><input type="number" id="Res" name="Res"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    function fnSumar(){
+        let Numuno=parseInt (document.getElementById("Numuno").value);
+        let Numdos=parseInt (document.getElementById("Numdos").value);
+        let Res = Numuno+Numdos;
+        document.getElementById("Res").value=Res;
+    }
+    function fnRestar(){
+        let Numuno=parseInt (document.getElementById("Numuno").value);
+        let Numdos=parseInt (document.getElementById("Numdos").value);
+        let Res = Numuno-Numdos;
+        document.getElementById("Res").value=Res;
+    }
+    function fnMultiplicacion(){
+        let Numuno=parseInt (document.getElementById("Numuno").value);
+        let Numdos=parseInt (document.getElementById("Numdos").value);
+        let Res = Numuno*Numdos;
+        document.getElementById("Res").value=Res;
+    }
+    function fnDivision(){
+        let Numuno=parseInt (document.getElementById("Numuno").value);
+        let Numdos=parseInt (document.getElementById("Numdos").value);
+        let Res = Numuno/Numdos;
+        document.getElementById("Res").value=Res;
+    }
+    function fnRaizCuadrada(){
+        let Numuno=parseInt (document.getElementById("Numuno").value);
+        let Numdos=parseInt (document.getElementById("Numdos").value);
+        let Res = ((Numuno)+(Numdos))*(0.5);
+        document.getElementById("Res").value=Res;
+    }
+    function fnPotenciación(){
+        let Numuno=parseInt (document.getElementById("Numuno").value);
+        let Numdos=parseInt (document.getElementById("Numdos").value);
+        let Res = ((Numuno)**(Numdos));
+        document.getElementById("Res").value=Res;
+    }
+    function fnAreatriangulo(){
+        let Numuno=parseInt (document.getElementById("Numuno").value);
+        let Numdos=parseInt (document.getElementById("Numdos").value);
+        let Res = ((Numuno)*(Numdos)/(2));
+        document.getElementById("Res").value=Res;
+    }
+    function fnHipotenusa(){
+        let Numuno=parseInt (document.getElementById("Numuno").value);
+        let Numdos=parseInt (document.getElementById("Numdos").value);
+        let Res = ((Numuno**2)+(Numdos**2));
+        document.getElementById("Res").value=Res;
+    }
+    function fnAreaRectangulo(){
+        let Numuno=parseInt (document.getElementById("Numuno").value);
+        let Numdos=parseInt (document.getElementById("Numdos").value);
+        let Res = ((Numuno)*(Numdos));
+        document.getElementById("Res").value=Res;
+    }
+    function fnAreaCirculo(){
+        let Numuno=parseInt (document.getElementById("Numuno").value);
+        let Numdos=parseInt (document.getElementById("Numdos").value);
+        let Res = ((Numuno)*(3.1416)*(2));
+        document.getElementById("Res").value=Res;
+    }
+</script>
+</html>

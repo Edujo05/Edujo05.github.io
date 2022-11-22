@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada y Salida</title>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+
+    <script src="./FirebaseTest/PotenciometroTest.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div><h1 class="text-center" style="color: aliceblue;"> Potenciometro </h1></div>
+    </header>
+
+    <section>
+        <div class="card-body col-10">
+            <div class="row m-3">
+                <div class="col-6 text-end" style="color:  aliceblue;">Potenciometro:</div>
+                <div class="col-3 text-end"><input type="number" id="Pot" name="Pot"></div>
+                <br>
+                <div class="col-9 text-end" style="color:  aliceblue;">Firebase Potenciometro:</div>
+                <div class="col-9 text-end" style="color:  aliceblue;"><label id="lblPot"></label></div>
+                <br>
+            </div>
+        
+        <div class="card-body col-12">
+            <div class="row m-1">
+                <div class="col-8 text-end"><button type="button" id="btnEnviar" class="btn btn-success" onclick="fnEnviar()">Enviar</button></div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row m-2">
+            <a href="Ejercicios.html">
+                <div class="col-8 text-end">
+                    <button type="button" class="btn btn-success">Regresar</button>
+                </div>
+             </a>
+            </div>
+            <br>
+    </section>
+    
+    <div>
+        <body background="https://images7.alphacoders.com/422/422220.jpg"></body>
+    </div>
+</body>
+</html>
